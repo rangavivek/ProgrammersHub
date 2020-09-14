@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            coding challenges
+        </title>
+        <link rel="stylesheet" href="compiler.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+      <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="index.html">Programmers Hub /></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="compiler.html">compiler <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="download compilers.html">download</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input id="myInput" onkeyup="myFunction()" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+    </section>
+        <ul id="myUL">
+            <li><a href="https://www.topcoder.com/challenges/?pageIndex=1">TopCoder</a></li>
+            <li><a href="https://www.coderbyte.com/">Coderbyte</a></li>
+          
+            <li><a href="https://projecteuler.net/">ProjectEuler</a></li>
+            <li><a href="https://www.hackerrank.com/domains">HackerRank</a></li>
+          
+            <li><a href="https://www.codechef.com/">CodeChef</a></li>
+            <li><a href="https://exercism.io/">Exercism.io</a></li>
+            <li><a href="https://www.codewars.com/">CodeWars</a></li>
+            <li><a href="https://leetcode.com/">LeetCode</a></li>
+            <li><a href="http://www.spoj.com/">SPOJ</a></li>
+          
+            <li><a href="https://www.codingame.com/">CodinGame</a></li>
+           
+          
+           
+          </ul>
+
+        <script>
+            function myFunction() {
+              // Declare variables
+              var input, filter, ul, li, a, i, txtValue;
+              input = document.getElementById('myInput');
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("myUL");
+              li = ul.getElementsByTagName('li');
+            
+              // Loop through all list items, and hide those who don't match the search query
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+                } else {
+                  li[i].style.display = "none";
+                }
+              }
+            }
+            </script>
+
+
+
+    </body>
+</html>

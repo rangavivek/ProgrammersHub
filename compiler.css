@@ -1,0 +1,92 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: sans-serif;
+    
+}
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: black;
+}
+.navbar
+{   
+    padding: 5px !important;
+    
+}
+.navbar-brand
+{
+    height: 40px;
+    padding-left: 20px;
+    color: #fff !important;
+    font-weight: 800;
+}
+.navbar-nav li
+{
+  padding: 0 10px ;
+}
+.navbar-nav li a
+{
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.fa-bars
+{
+    color: #fff;
+    font-size: 30px !important;
+}
+.navbar-toggler
+{
+    outline: none !important;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
+    background-color: #3344ff;
+    color:#ffffff; 
+    }
+
+  #myInput {
+    background-color: #343a40;
+    color: #fff;
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 20px; /* Add some padding */
+    border: 1px solid rgb(221, 221, 221); /* Add a grey border */
+    margin-bottom: 0px; /* Add some space below the input */
+  }
+  
+  #myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a {
+    border-top: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color:#343a40; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: #fff; /* Add a white text color */
+    display: block; /* Make it into a block element to fill the whole list */
+    text-align: center ;
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: black; /* Add a hover effect to all links, except for headers */
+  }
+
+  
+
+
